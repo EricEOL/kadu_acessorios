@@ -50,8 +50,8 @@ export default function Home() {
 
           <Box mt={["8px", "0"]}>
             <Text mb="2">Profissional: <Text as="strong">Paulo Cesar</Text></Text>
-            <Text mb="2">Telefone: <Text as="strong">(21) 99999-9999</Text></Text>
-            <Text>E-mail: <Text as="strong">paulocesar@gmail.com</Text></Text>
+            <Text mb="2">Telefone: <Text as="strong">(21) 97493-3498</Text></Text>
+            <Text>E-mail: <Text as="strong">paulomarques9170@gmail.com</Text></Text>
           </Box>
         </Flex>
 
@@ -81,11 +81,11 @@ export default function Home() {
           ></iframe>
 
           <Box>
-            <Flex w={["100%","400px"]} justify="space-evenly" direction={["column", "row"]}>
+            <Flex w={["100%","400px"]} justify="space-between" direction={["column", "row"]}>
               <Text mb="2">Rua: <Text as="strong">Cardoso de Morais</Text></Text>
               <Text mb="2">Nº: <Text as="strong">400 A/B</Text></Text>
             </Flex>
-            <Flex w={["100%","400px"]} justify="space-evenly" direction={["column", "row"]}>
+            <Flex w={["100%","400px"]} justify="space-between" direction={["column", "row"]}>
               <Text mb="2">Bairro: <Text as="strong">Bonsucesso</Text></Text>
               <Text mb="2">Cidade: <Text as="strong">Rio de Janeiro/RJ</Text></Text>
             </Flex>
