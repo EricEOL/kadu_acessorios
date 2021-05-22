@@ -50,7 +50,7 @@ export default function Home() {
 
           <Box mt={["8px", "0"]}>
             <Text mb="2">Profissional: <Text as="strong">Paulo Marques</Text></Text>
-            <Text mb="2">Telefone: <Text as="strong">(21) 97493-3498</Text></Text>
+            <Text mb="2">Telefone: <Text as="strong" color="yellow.400"><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5521974933498" target="_blank">(21) 97493-3498 <Image src="/icons/whatsapp.svg" width={20} height={20}/></a></Text></Text>
             <Text>E-mail: <Text as="strong">paulomarques9170@gmail.com</Text></Text>
           </Box>
         </Flex>
