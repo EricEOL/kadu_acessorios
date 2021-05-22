@@ -4,10 +4,12 @@ export function Logo() {
   return (
     <Flex
       w="100%"
-      h={["20", "100"]}
+      h={["20", "120"]}
       px="4"
-      bg="rgba(24,27,35,0.4)"
-      align="center"
+      bg="rgba(24,27,35,0.8)"
+      align="right"
+      justifyContent="center"
+      direction="column"
     >
       <Text
         as="i"
@@ -21,6 +23,15 @@ export function Logo() {
         <Text as="span" ml="15px" opacity={1}>
           ACESSÓRIOS
         </Text>
+      </Text>
+      <Text 
+        fontSize={["10px", "16px"]} 
+        mt={["-5px","-20px"]}
+        letterSpacing="2px"
+        color="yellow.300"
+        fontWeight="bold"
+      >
+        OFICINA MECÂNICA ESPECIALIZADA
       </Text>
     </Flex>
   )
