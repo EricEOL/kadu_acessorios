@@ -49,7 +49,7 @@ export default function Home() {
           </Flex>
 
           <Box mt={["8px", "0"]}>
-            <Text mb="2">Profissional: <Text as="strong">Paulo Cesar</Text></Text>
+            <Text mb="2">Profissional: <Text as="strong">Paulo Marques</Text></Text>
             <Text mb="2">Telefone: <Text as="strong">(21) 97493-3498</Text></Text>
             <Text>E-mail: <Text as="strong">paulomarques9170@gmail.com</Text></Text>
           </Box>
