@@ -10,7 +10,7 @@ export default function Home() {
 
       <Flex pt="8" pb="8" justify="center" align="center" w="100%" direction="column">
 
-        <Text fontSize={["1xl", "3xl"]} fontWeight="bold" textAlign="center">SERVIÇOS QUE OFERECEMOS</Text>
+        <Text id="services" fontSize={["1xl", "3xl"]} fontWeight="bold" textAlign="center">SERVIÇOS QUE OFERECEMOS</Text>
 
         <Box>
           <Flex justify="center" align="center" w="100%" mt="4" direction="column">
@@ -31,7 +31,7 @@ export default function Home() {
 
       <Flex pt="4" pb="8" justify="center" align="center" w="100%" direction="column">
 
-        <Text mb="4" fontSize={["1xl", "3xl"]} fontWeight="bold" textAlign="center">FALE COM O MECÂNICO</Text>
+        <Text id="contact-us" mb="4" fontSize={["1xl", "3xl"]} fontWeight="bold" textAlign="center">FALE COM O MECÂNICO</Text>
 
         <Flex
           align="center"
@@ -59,7 +59,7 @@ export default function Home() {
 
       <Flex pt="4" pb="8" justify="center" align="center" w="100%" direction="column">
 
-        <Text mb="4" fontSize={["1xl", "3xl"]} fontWeight="bold" textAlign="center">VENHA ATÉ A NOSSA OFICINA</Text>
+        <Text id="location" mb="4" fontSize={["1xl", "3xl"]} fontWeight="bold" textAlign="center">VENHA ATÉ A NOSSA OFICINA</Text>
 
         <Flex
           align="center"
@@ -76,7 +76,6 @@ export default function Home() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14706.935744119686!2d-43.26182070128308!3d-22.84933112344026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997bfed4512355%3A0xc07fd22fc55b58d6!2sKADU%20ACESS%C3%93RIOS!5e0!3m2!1spt-BR!2sbr!4v1621712474378!5m2!1spt-BR!2sbr"
             width="100%"
             height="400px"
-            allowfullscreen=""
             loading="lazy"
           ></iframe>
 

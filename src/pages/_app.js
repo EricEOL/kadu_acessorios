@@ -1,5 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import Head from 'next/head';
+import '../styles/styles.css';
 import { theme } from '../styles/theme';
 
 function MyApp({ Component, pageProps }) {
