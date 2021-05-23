@@ -1,4 +1,5 @@
 import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
 import { Flex, Box, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import { CardService } from '../components/CardServices';
@@ -93,6 +94,7 @@ export default function Home() {
 
       </Flex>
 
+      <Footer />
     </Box>
   )
 }
