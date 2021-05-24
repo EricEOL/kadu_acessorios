@@ -1,6 +1,6 @@
 # *Kadu Acessórios*
  
-O website Kadu Acessórios serve como publibicidade para uma empresa.
+O website da Kadu Acessórios serve como publicidade para uma empresa de mecânica de automóveis.
  
  
 ## Tecnologias 
