@@ -30,7 +30,6 @@ export function ImageSlider({ width, height, images, children }) {
     >
       {children}
       <VStack align="right" p="4px 0 50px 4px">
-        {/* <Text fontSize="sm">{`${counter + 1}/${images.length}`}</Text> */}
         {images.map((item, index) => (
           <Box key={index} w="20px" h="20px" borderRadius="4px" bg={index == counter ? '#ffffff' : '#333333'} mt="5px"></Box>
         ))}

@@ -18,19 +18,4 @@ export function Header() {
         <Logo />
       </ImageSlider>
     )
-
-/*   return (
-    <Flex
-      as="header"
-      w="100%"
-      h={["300", "600"]}
-      mx="auto"
-      bgImage="url('/images/banner_1.jpg')"
-      bgPosition={["center"]}
-      bgSize="cover"
-      bgRepeat="no-repeat"
-    >
-      <Logo />
-    </Flex>
-  ) */
 }
