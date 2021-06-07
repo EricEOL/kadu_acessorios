@@ -1,4 +1,4 @@
-import { Box, Text, Flex, VStack } from '@chakra-ui/react';
+import { Box, Flex, VStack } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 
 export function ImageSlider({ width, height, images, children }) {
@@ -31,7 +31,16 @@ export function ImageSlider({ width, height, images, children }) {
       {children}
       <VStack align="right" p="4px 0 50px 4px">
         {images.map((item, index) => (
-          <Box key={index} w="20px" h="20px" borderRadius="4px" bg={index == counter ? '#ffffff' : '#333333'} mt="5px"></Box>
+          <Box
+            key={index}
+            w="20px"
+            h="20px"
+            borderRadius="4px"
+            bg={index == counter ? '#ffffff' : '#333333'}
+            mt="5px"
+            opacity="0.4"
+          >
+          </Box>
         ))}
       </VStack>
     </Flex>

@@ -1,10 +1,17 @@
+import Image from 'next/image';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { Flex, Box, Text } from '@chakra-ui/react';
-import Image from 'next/image';
 import { CardService } from '../components/CardServices';
+import { ImageSlider } from '../components/ImageSlider';
 
-export default function Home() {
+const images = [
+  "url('/images/oficina_1.webp')",
+  "url('/images/oficina_2.webp')",
+  "url('/images/oficina_3.webp')",
+]
+
+const Home = () => {
   return (
     <Box>
       <Header />
@@ -51,7 +58,7 @@ export default function Home() {
 
           <Box mt={["8px", "0"]}>
             <Text mb="2">Profissional: <Text as="strong">Paulo Marques</Text></Text>
-            <Text mb="2">Telefone: <Text as="strong" color="yellow.400"><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5521974933498" target="_blank">(21) 97493-3498 <Image src="/icons/whatsapp.svg" width={20} height={20}/></a></Text></Text>
+            <Text mb="2">Telefone: <Text as="strong" color="yellow.400"><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5521974933498" target="_blank">(21) 97493-3498 <Image src="/icons/whatsapp.svg" width={20} height={20} /></a></Text></Text>
             <Text>E-mail: <Text as="strong">paulomarques9170@gmail.com</Text></Text>
           </Box>
         </Flex>
@@ -81,15 +88,40 @@ export default function Home() {
           ></iframe>
 
           <Box>
-            <Flex w={["100%","400px"]} justify="space-between" direction={["column", "row"]}>
+            <Flex w={["100%", "400px"]} justify="space-between" direction={["column", "row"]}>
               <Text mb="2">Rua: <Text as="strong">Cardoso de Morais</Text></Text>
               <Text mb="2">Nº: <Text as="strong">400 A/B</Text></Text>
             </Flex>
-            <Flex w={["100%","400px"]} justify="space-between" direction={["column", "row"]}>
+            <Flex w={["100%", "400px"]} justify="space-between" direction={["column", "row"]}>
               <Text mb="2">Bairro: <Text as="strong">Bonsucesso</Text></Text>
               <Text mb="2">Cidade: <Text as="strong">Rio de Janeiro/RJ</Text></Text>
             </Flex>
           </Box>
+
+        </Flex>
+
+      </Flex>
+
+      <Flex pt="4" pb="8" justify="center" align="center" w="100%" direction="column">
+
+        <Text id="office" mb="4" fontSize={["1xl", "3xl"]} fontWeight="bold" textAlign="center">NOSSA OFICINA</Text>
+
+        <Flex
+          align="center"
+          justify="space-evenly"
+          bg="gray.800"
+          padding="12px"
+          borderRadius="4px"
+          mb="4"
+          w={["95vw", "630px"]}
+          h={["280px", "450px"]}
+          direction={["column", "row"]}
+        >
+          <ImageSlider
+            width="100%"
+            height={["250", "400"]}
+            images={images}
+          />
         </Flex>
 
       </Flex>
@@ -98,3 +130,5 @@ export default function Home() {
     </Box>
   )
 }
+
+export default Home;

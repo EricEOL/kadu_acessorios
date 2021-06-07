@@ -29,6 +29,7 @@ export function Footer() {
         <Link href="#services" colorScheme="red" bg="transparent" fontSize={["sm", "md"]}>Serviços</Link>
         <Link href="#contact-us" colorScheme="red" bg="transparent" fontSize={["sm", "md"]}>Contato</Link>
         <Link href="#location" colorScheme="red" bg="transparent" fontSize={["sm", "md"]}>Localização</Link>
+        <Link href="#office" colorScheme="red" bg="transparent" fontSize={["sm", "md"]}>Oficina</Link>
       </VStack>
 
       <VStack align="right">

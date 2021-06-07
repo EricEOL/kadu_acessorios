@@ -9,13 +9,13 @@ const images = [
 
 export function Header() {
 
-    return (
-      <ImageSlider 
-        width="100%"
-        height={["300", "600"]}
-        images={images}
-      >
-        <Logo />
-      </ImageSlider>
-    )
+  return (
+    <ImageSlider
+      width="100%"
+      height={["300", "600"]}
+      images={images}
+    >
+      <Logo />
+    </ImageSlider>
+  )
 }
