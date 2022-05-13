@@ -5,16 +5,16 @@ import { Flex, Box, Text } from '@chakra-ui/react';
 import { CardService } from '../components/CardServices';
 import { ImageSlider } from '../components/ImageSlider';
 
-const images = [
+const imagesOficina = [
   "url('/images/oficina_1.webp')",
   "url('/images/oficina_2.webp')",
   "url('/images/oficina_3.webp')",
 ]
 
-const Home = () => {
+const Home = ({imagesBanner}) => {
   return (
     <Box>
-      <Header />
+      <Header images={imagesBanner}/>
 
       <Flex pt="8" pb="8" justify="center" align="center" w="100%" direction="column">
 
@@ -120,7 +120,7 @@ const Home = () => {
           <ImageSlider
             width="100%"
             height={["250", "400"]}
-            images={images}
+            images={imagesOficina}
           />
         </Flex>
 
@@ -129,6 +129,21 @@ const Home = () => {
       <Footer />
     </Box>
   )
+}
+
+export const getStaticProps = async () => {
+  
+  const images = [
+    "url('/images/banner_1.webp')",
+    "url('/images/banner_2.webp')",
+    "url('/images/banner_3.webp')",
+  ]
+  
+  return {
+    props: {
+      imagesBanner: images
+    }
+  }
 }
 
 export default Home;

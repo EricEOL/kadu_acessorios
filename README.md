@@ -1,6 +1,6 @@
 # *Kadu Acessórios*
  
-O website da Kadu Acessórios serve como publicidade para uma empresa de mecânica de automóveis.
+O website da Kadu Acessórios serve como publicidade para uma empresa de mecânica de automóveis localizada no Rio de Janeiro.
  
  
 ## Tecnologias 
