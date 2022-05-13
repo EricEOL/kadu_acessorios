@@ -1,5 +1,5 @@
 import { Box, Flex, VStack } from '@chakra-ui/react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export function ImageSlider({ width, height, images, children }) {
 
@@ -9,7 +9,6 @@ export function ImageSlider({ width, height, images, children }) {
     if (counter < images.length) {
       setTimeout(() => {
         setCounter(counter + 1);
-        console.log(counter);
       }, 5000)
     } else {
       setCounter(0);
@@ -26,6 +25,7 @@ export function ImageSlider({ width, height, images, children }) {
       bgRepeat="no-repeat"
       align="right"
       direction="column"
+      transition="2s"
       justify="space-between"
     >
       {children}
